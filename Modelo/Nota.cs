@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace Modelo
 {
-    public class Medico
+    public class Nota
     {
         public int Id { get; set; }
-        public string Nombre { get; set; }
-        public string Apellido { get; set; }
-        public string Correo { get; set; }
-
+        public DateTime Fecha { get; set; }
+        public string Detalle { get; set; }
     }
 }

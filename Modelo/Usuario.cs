@@ -12,7 +12,7 @@ namespace Modelo
         public string Nombre { get; set; }
         public string Apellido { get; set; }
         public string Correo { get; set; }
-        public Perfil Prfl { get; set; }
+        public Perfil Perfil { get; set; }
         public string Usr { get; set; }
         public string Pwd { get; set; }
 
