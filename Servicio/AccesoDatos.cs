@@ -8,7 +8,7 @@ namespace Servicio
         public SqlConnection Conexion { get; set; }
         public SqlCommand Comando { get; set; }
         public SqlDataReader Lector { get; set; }
-        string cadena = @"data source =.\SQLEXPRESS; initial catalog= CATALOGO_DB; integrated security=sspi";
+        string cadena = @"data source =.\SQLEXPRESS; initial catalog= RUIZ_DB; integrated security=sspi";
 
         public AccesoDatos()
         {

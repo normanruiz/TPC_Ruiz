@@ -81,3 +81,37 @@ USE [RUIZ_DB]
 GO
 IF NOT EXISTS (SELECT name FROM sys.filegroups WHERE is_default=1 AND name = N'PRIMARY') ALTER DATABASE [RUIZ_DB] MODIFY FILEGROUP [PRIMARY] DEFAULT
 GO
+
+create table perfiles(
+	Id int primary key identity(1,1),
+	Tipo varchar(50) unique not null
+);
+
+insert into Perfiles values ('Administrador');
+insert into Perfiles values ('Recepcionista');
+insert into Perfiles values ('Medico');
+
+select Id, Tipo from perfiles;
+
+create table usuarios(
+	Id int primary key identity(1,1),
+	Nombre varchar(50) not null,
+	Apellido varchar(50) not null,
+	Correo varchar(120) not null,
+	IdPerfil int foreign key references perfiles(Id),
+	Usr varchar(50) unique not null,
+	Pwd varchar(50) not null,
+	Estado bit not null 
+);
+
+insert into usuarios values('Norman','Ruiz','norman.ruiz@icloud.com', 1, 'nruiz','Usuario@1234#',1)
+insert into usuarios values('Cecilia','Lupani','lalala@icloud.com', 2, 'clupani','Usuario@1234#',1)
+insert into usuarios values('Natalia','Spini','maslalala@icloud.com', 3, 'nspini','Usuario@1234#',1)
+
+select u.Id, u.Nombre, u.Apellido, u.Correo, u.IdPerfil, p.Tipo, u.Usr, u.Pwd, u.Estado from usuarios as u inner join perfiles as p on u.IdPerfil = p.Id
+
+
+create table lalala(
+	Id int primary key identity(1,1),
+
+);

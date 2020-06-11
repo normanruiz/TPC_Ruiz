@@ -15,6 +15,7 @@ namespace Modelo
         public Perfil Perfil { get; set; }
         public string Usr { get; set; }
         public string Pwd { get; set; }
+        public bool Estado { get; set; }
 
     }
 }

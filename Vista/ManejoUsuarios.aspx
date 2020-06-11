@@ -53,31 +53,34 @@
                 <table class="table">
                     <thead class="thead-dark">
                         <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
+                            <th scope="col">Id</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Apellido</th>
+                            <th scope="col">Correo</th>
+                            <th scope="col">IdPerfil</th>
+                            <th scope="col">Perfil</th>
+                            <th scope="col">Usuario</th>
+                            <th scope="col">Contraseña</th>
+                            <th scope="col">Estado</th>
                         </tr>
                     </thead>
                     <tbody>
+                        <% foreach (var usuario in ListaUsuarios)
+                            {%>
+
                         <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
+                            <td><% = usuario.Id %></td>
+                            <td><% = usuario.Nombre %></td>
+                            <td><% = usuario.Apellido %></td>
+                            <td><% = usuario.Correo %></td>
+                            <td><% = usuario.Perfil.Id %></td>
+                            <td><% = usuario.Perfil.Tipo %></td>
+                            <td><% = usuario.Usr %></td>
+                            <td><% = usuario.Pwd %></td>
+                            <td><% = usuario.Estado %></td>
                         </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                        </tr>
+
+                        <%} %>
                     </tbody>
                 </table>
 

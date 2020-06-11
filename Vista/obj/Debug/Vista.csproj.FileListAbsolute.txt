@@ -74,3 +74,9 @@ C:\Users\Norman Ruiz\source\repos\TPC_Ruiz\Vista\obj\Debug\Vista.csproj.CoreComp
 C:\Users\Norman Ruiz\source\repos\TPC_Ruiz\Vista\obj\Debug\Vista.csproj.CopyComplete
 C:\Users\Norman Ruiz\source\repos\TPC_Ruiz\Vista\obj\Debug\Vista.dll
 C:\Users\Norman Ruiz\source\repos\TPC_Ruiz\Vista\obj\Debug\Vista.pdb
+C:\Users\Norman Ruiz\source\repos\TPC_Ruiz\Vista\bin\Controlador.dll
+C:\Users\Norman Ruiz\source\repos\TPC_Ruiz\Vista\bin\Modelo.dll
+C:\Users\Norman Ruiz\source\repos\TPC_Ruiz\Vista\bin\Servicio.dll
+C:\Users\Norman Ruiz\source\repos\TPC_Ruiz\Vista\bin\Controlador.pdb
+C:\Users\Norman Ruiz\source\repos\TPC_Ruiz\Vista\bin\Modelo.pdb
+C:\Users\Norman Ruiz\source\repos\TPC_Ruiz\Vista\bin\Servicio.pdb
