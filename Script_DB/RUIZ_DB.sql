@@ -110,8 +110,26 @@ insert into usuarios values('Natalia','Spini','maslalala@icloud.com', 3, 'nspini
 
 select u.Id, u.Nombre, u.Apellido, u.Correo, u.IdPerfil, p.Tipo, u.Usr, u.Pwd, u.Estado from usuarios as u inner join perfiles as p on u.IdPerfil = p.Id
 
+create table medicos(
+	Id int primary key identity(1,1),
+	Nombre varchar(50) not null,
+	Apellido varchar(50) not null,
+	Correo varchar(120) not null,
+);
 
-create table lalala(
+insert into medicos values ('Natalia Gabriela', 'Spini', 'maslalala@icloud.com')
+insert into medicos values ('Kristen', 'Stewart', 'lalala1@icloud.com')
+insert into medicos values ('Emily', 'Blunt', 'lalala2@icloud.com')
+insert into medicos values ('Alicia', 'Vikander', 'maslalala3@icloud.com')
+insert into medicos values ('Teresa', 'Palmer', 'maslalala4@icloud.com')
+insert into medicos values ('Kaya', 'Scodelario', 'maslalala5@icloud.com')
+insert into medicos values ('Marion', 'Cotillard', 'maslalala6@icloud.com')
+insert into medicos values ('Amy', 'Adams', 'maslalala7@icloud.com')
+
+select m.Id, m.Nombre, m.Apellido, m.Correo from medicos as m
+
+
+create table (
 	Id int primary key identity(1,1),
 
 );

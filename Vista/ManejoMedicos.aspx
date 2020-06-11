@@ -53,31 +53,24 @@
                 <table class="table">
                     <thead class="thead-dark">
                         <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
+                            <th scope="col">Id</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Apellido</th>
+                            <th scope="col">Correo</th>
                         </tr>
                     </thead>
                     <tbody>
+                        <% foreach (var medico in ListaMedicos)
+                            {%>
+
                         <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
+                            <td><% = medico.Id %></td>
+                            <td><% = medico.Nombre %></td>
+                            <td><% = medico.Apellido %></td>
+                            <td><% = medico.Correo %></td>
                         </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                        </tr>
+
+                        <%} %>
                     </tbody>
                 </table>
 
